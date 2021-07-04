@@ -1,3 +1,11 @@
 export default class Event{
-// implement your code here...
+  constructor(event) {
+    this.second = event.second
+    delete event.second
+    this.event = event
+  }
+
+  execute_event() {
+    console.log(`At second ${this.second}: ${JSON.stringify(this.event)}`)
+  }
 };

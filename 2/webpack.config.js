@@ -16,6 +16,9 @@ module.exports = {
                             '@babel/preset-env',
                             '@babel/preset-es2015'
                         ],
+                        plugins: [
+                            "@babel/plugin-proposal-object-rest-spread"
+                        ]
                     }
                 }
             }
